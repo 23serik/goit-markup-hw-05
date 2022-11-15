@@ -65,7 +65,7 @@
     <section class="hero">
       <div class="container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="button" type="button">Замовити послугу</button>
+        <button class="button" type="button" data-modal-open>Замовити послугу</button>
       </div>
     </section>
     <!-- список особливостей about -->
@@ -123,14 +123,23 @@
       <div class="container">
         <h2 class="section-title">Чим ми займаємося</h2>
         <ul class="section-list list">
-          <li>
+          <li class="section-item">
             <img src="./images/img-1.jpg" alt="робота вебстудії" width="370" height="294" />
+            <div class="section-overlay">
+              <p class="section-text">Десктопні додатки</p>
+            </div>
           </li>
-          <li>
+          <li class="section-item">
             <img src="./images/img-2.jpg" alt="робота вебстудії" width="370" height="294" />
+            <div class="section-overlay">
+              <p class="section-text">Мобільні додатки</p>
+            </div>
           </li>
-          <li>
+          <li class="section-item">
             <img src="./images/img-3.jpg" alt="робота вебстудії" width="370" height="294" />
+            <div class="section-overlay">
+              <p class="section-text">Дизайнерські рішення</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -418,6 +427,17 @@
       </div>
     </div>
   </footer>
+  <!-- Modal window -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="modal-btn" data-modal-close> <svg class="model-icon" width="11" height="11">
+          <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
